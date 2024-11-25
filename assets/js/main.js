@@ -44,8 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `https://api.openweathermap.org/data/2.5/forecast?lat=${city.lat}&lon=${city.lon}&appid=88c4f1b5740f4887aa5964860a8fd1ca&units=metric`
     );
     const data = await res.json();
-    console.log(city);
-    console.log("weatherForecast", data);
+
 
     const days = [];
     for(let i = 7; i<40; i+=8) {
@@ -57,12 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
         minTemp: (item.main.temp_min).toFixed(0) + "°C",
         id: item.weather[0].id.toString(),
         description: item.weather[0].description,
-      });}
- 
-  for (let i = 0;  i<40; i++) {
-    getDay(i, days[i]);
-  }
+      });
+    }
+    console.log(days);
 
+    days.forEach((day, i)=>getDay(i, day));
+  
   function formatDay(dateInput) {
     const options  =({weekday:'short', day:"2-digit", month:"short"});
     const date = new Date(dateInput*1000);
