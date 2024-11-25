@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    />
+    <link
+      rel="icon"
+      href="./assets/images/PartlyCloudy.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/main.js" async></script>
+
+    <title>Weather app</title>
+  </head>
+  <body class="center-flex">
+    <img
+      src="./assets/images/snowflake2.png"
+      class="rotating-image"
+      style="position: absolute; top: 30px; left: 40px; width: 60px"
+      alt="snowflake"
+    />
+    <img
+      src="./assets/images/snowflake.png"
+      class="rotating-image"
+      style="position: absolute; bottom: 30px; right: 40px; width: 150px"
+      alt="snowflake"
+    />
+    <img
+      src="./assets/images/wide.png"
+      style="position: absolute; top: 80px; right: 200px; width: 60px"
+      alt="star"
+    />
+    <img
+      src="./assets/images/wide.png"
+      style="position: absolute; bottom: 70px; left: 200px; width: 60px"
+      alt="star"
+    />
+    <img
+      src="./assets/images/4.png"
+      style="position: absolute; top: 80px; left: 250px; width: 40px"
+      alt="star"
+    />
+    <img
+      src="./assets/images/4.png"
+      style="position: absolute; bottom: 200px; right: 500px; width: 40px"
+      alt="star"
+    />
+
+    <div class="box center-flex">
+      <div class="description">
+        <h1>Weather app</h1>
+        <p>Get the weather of any city in the world</p>
+        <span
+          >created with:
+          <a class="border" href="https://openweathermap.org/api"
+            >OpenWeather</a
+          ></span
+        >
+      </div>
+      <div class="app">
+        <div class="search">
+          <input
+            type="search"
+            class="border"
+            id="search"
+            placeholder="Enter city"
+          /><button>
+            <img
+              id="search-button"
+              src="./assets/images/Sunny-Bulk.png"
+              style="width: 30px"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="city center-flex">
+          <h1 id="city-name"></h1>
+          <span id="temp"></span>
+          <img src="./assets/images/RainThunder.png" id="weather-icon" alt="" />
+        </div>
+
+        <div class="current-weather"><p id="weather"></p></div>
+        <div class="forecast">
+          <div id="day1"><p id="date1"></p><p id="maxTemp1"></p> <div style="display: flex;"><img style="width: 17px; height: 20px;" src="./assets/images/WeatherIcon - 1-17.png" alt=""> <p id="humidity1"></p></div><img id="imgDay1" style="width: 80px;" src="" alt=""> <p id="description1"></p></div>
+          <div id="day2"><p id="date2"></p><p id="maxTemp2"></p><div style="display: flex;"><img style="width: 17px; height: 20px;" src="./assets/images/WeatherIcon - 1-17.png" alt=""> <p id="humidity2"></p></div> <img id="imgDay2"style="width: 80px;" src="" alt=""> <p id="description2"></p></div>
+          <div id="day3"><p id="date3"></p><p id="maxTemp3"></p> <div style="display: flex;"><img style="width: 17px; height: 20px;" src="./assets/images/WeatherIcon - 1-17.png" alt=""><p id="humidity3"></p></div></p> <img id="imgDay3"style="width: 80px;" src="" alt=""> <p id="description3"></p></div>
+          <div id="day4"><p id="date4"></p><p id="maxTemp4"></p> <div style="display: flex;"><img style="width: 17px; height: 20px;" src="./assets/images/WeatherIcon - 1-17.png" alt=""><p id="humidity4"></p></div></p> <img id="imgDay4" style="width: 80px;"src="" alt=""> <p id="description4"></p></div>
+
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
